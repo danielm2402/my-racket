@@ -15,7 +15,7 @@ _To run any exercise you only need DrRacket_
 
 ## Built with 🛠️
 
-* [DrRacket]https://racket-lang.org/)
+* [DrRacket](https://racket-lang.org/)
 
 ## Contributions 🖇️
 
