@@ -1,0 +1,19 @@
+#lang racket
+
+(define(discount salario puesto sexo)
+  (define descuento 0)
+  (define total 0)
+ (if(equal? puesto 'obrero)(if(equal? sexo 'f) (set! descuento 0.1) (set! descuento 0.15) ) (if(equal? puesto 'oficinista) (if(equal? sexo 'f)(set! descuento 0.15)(set! descuento 0.2)) ('Invalido) ))
+  (set! total (- salario (* salario descuento)))
+
+  (print total)
+)
+
+
+(begin
+(define salario (read))
+(define puesto (read))
+(define sexo (read))
+(discount salario puesto sexo)
+
+)
