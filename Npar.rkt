@@ -1,5 +1,5 @@
 #lang at-exp racket
-(define(sumarpares n)
+(define(addpairs n)
   (define max(* n 2))
   (define sum 0)
   (unless(= (quotient max 2) 0) (set! max (+ 1 max)))
@@ -15,9 +15,8 @@
 
 
 (begin
-  (display "Suma de los n primero numeros pares")
   (newline)
-  (display "Ingrese el valor de n: ")
+  (display "Enter the value of N: ")
   (define x (read))
-  (sumarpares x)
+  (addpairs x)
   )
